@@ -1,0 +1,39 @@
+{
+    "name": "lamoda/tactician-queue",
+    "description": "Middleware for Tactician to publish commands to lamoda/queue library",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lamoda developers",
+            "homepage": "https://tech.lamoda.ru/"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.1",
+        "lamoda/queue-bundle": "^1.0",
+        "league/tactician": "^1.0",
+        "symfony/serializer": "^3.4 || ^4.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.14",
+        "phpunit/phpunit": "^7.5"
+    },
+    "suggest": {
+        "lamoda/tactician-queue-bundle": "For integration with Symfony"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lamoda\\TacticianQueue\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lamoda\\TacticianQueue\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

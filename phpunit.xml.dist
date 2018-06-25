@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit
+    bootstrap="vendor/autoload.php"
+    colors="true"
+    verbose="true"
+    backupGlobals="false"
+>
+    <php>
+        <ini name="error_reporting" value="-1" />
+        <env name="SHELL_VERBOSITY" value="-1" />
+    </php>
+    <testsuites>
+        <testsuite name="Lamoda Tactician Queue Middleware Unit Test Suite">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src</directory>
+        </whitelist>
+    </filter>
+</phpunit>
