@@ -6,7 +6,7 @@ Lamoda Tactician Queue Middleware
 [![Code Coverage](https://scrutinizer-ci.com/g/lamoda/tactician-queue/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/lamoda/tactician-queue/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/lamoda/tactician-queue/badges/build.png?b=master)](https://scrutinizer-ci.com/g/lamoda/tactician-queue/build-status/master)
 
-Library provides middleware that gives you ability to execute commands via Tactician in async or delayed way
+Library provides middleware that gives you ability to execute commands via Tactician in async or delayed way.
 
 ## Installation
 
