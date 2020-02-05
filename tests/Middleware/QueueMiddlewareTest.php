@@ -75,10 +75,9 @@ final class QueueMiddlewareTest extends TestCase
             ->method('produceQueues')
             ->willReturn($publishedQueues);
 
-        $expectation = $this->publisherFactory->expects($this->any())
-            ->method('publish');
-
-        call_user_func_array([$expectation, 'withConsecutive'], $publishedQueues);
+        $this->publisherFactory->expects($this->any())
+            ->method('publish')
+            ->withConsecutive($publishedQueues);
 
         $this->middleware->execute($command, $next);
 
