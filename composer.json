@@ -12,7 +12,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": "^7.1",
-        "lamoda/queue-bundle": "^1.0",
+        "lamoda/queue-bundle": "^1.0 || ^2.0",
         "league/tactician": "^1.0",
         "symfony/serializer": "^3.4 || ^4.0"
     },
